@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+	<f:section name="main">
+		<div class="location-list">	
+		<f:for each="{locations}" as="location">
+			<div class="location-list__item location-list__item{location.uid}">		
+				<f:link.page class="location-list__link" 
+					additionalParams="{tx_programmevents_programmevents: '{location: location}'}" pageUid="{settings.listPageUid}">				
+					<p class="location-list__title">{location.name}</p>
+				</f:link.page>
+			</div>	
+		</f:for>
+		</div>
+	</f:section>
+</html>

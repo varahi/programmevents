@@ -1,0 +1,46 @@
+<table class="prgListeBox" border="0">
+  	<tr>
+  		<td valign="top" class="prgLeft">
+
+	<f:link.page 
+  	additionalParams="{tx_programmevents_programmevents: '{event: event}'}" 
+  	pageUid="{settings.detailPageUid}">	
+  	<f:if condition="{event.picture}">	
+  		<f:then>
+  			<f:image src="{event.picture.originalResource.publicUrl}" width="100c" height="100c" />	
+  		</f:then>
+  		<f:else>
+  			<f:if condition="{event.image}">	
+  				<f:then>
+						<image src="{event.image}" class="prgImg" alt="{event.title}" />
+  				</f:then>
+  				<f:else>
+  					<f:image src="typo3conf/ext/programmevents/Resources/Public/Images/no-image.png" 
+  					width="100c" height="100c" alt="{event.title}" class="prgImg"  />
+  				</f:else>
+  			</f:if>	  		
+  		</f:else>
+  	</f:if>
+ 	</f:link.page>
+  	  		
+  		</td>
+  		<td valign="top" class="prgRight">
+  		<p class="prgListZeit">{event.formatteddate}</p>
+  		<h3 class="prgHeadLine">{event.title}</h3>
+  		<p class="prgListFeed">geschlossene Veranstaltung &nbsp;
+  			<f:link.page 
+  				additionalParams="{tx_programmevents_programmevents: '{event: event}'}" 
+  				pageUid="{settings.detailPageUid}">
+  					<f:translate key="tx_programmevents.more" />
+  			</f:link.page><br />
+  		
+  		<span class="prgListVE">Veranstalter:&nbsp;{event.location.name}</span>
+  		<span class="_hiddenTxt">
+    		<f:if condition="{event.categories}">
+    			Categories: 
+					<f:render partial="Event/Categories" arguments="{_all}" />	  	
+    		</f:if> 
+  		</span></p>
+    </td>
+   </tr>
+</table>

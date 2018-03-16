@@ -1,0 +1,20 @@
+# cat=basic/enable; type=string; label=Path (from TYPO3-Root) for backup (default 'fileadmin/import_events/backup/')
+archiveFolder = fileadmin/import_events/backup/
+
+# cat=basic/enable; type=int; label=Max number of backup files to keep (default 5)
+maxBackups = 5
+
+# cat=basic/enable; type=string; label=Path (from TYPO3-Root) for imported files (default fileadmin/import_events/)
+inboxFolder = fileadmin/import_events/
+
+# cat=basic/enable; type=string; label=File name for import (default 155.xml)
+inboxFilename = events.xml
+
+# cat=basic/enable; type=string; label=Datetime prefix for backup files (Format from php date() function)
+templateArchiveFilePrefix = Y-m-d_
+
+# cat=basic/enable; type=boolean; label=Enable devLog:Debugging-only! Required 3rd party dev_log extension
+enableDevLog = 0
+
+# cat=basic/enable; type=int; label=pid (Page ID)
+pid = 58

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-03-06T10:19:31Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="tx_programmevents.more">
+			<source>More</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_event">
+			<source>Event</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_event.categories">
+			<source>Categories</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_event.datebegin">
+			<source>Datebegin</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_event.formatteddate">
+			<source>Formatteddate</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_event.id">
+			<source>Id</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_event.image">
+			<source>Image</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_event.location">
+			<source>Location</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_event.timebegin">
+			<source>Timebegin</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_event.title">
+			<source>Title</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_event.type">
+			<source>Type</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_event.weekdaybegin">
+			<source>Weekdaybegin</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_location">
+			<source>Location</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_location.address">
+			<source>Address</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_location.city">
+			<source>City</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_location.event">
+			<source>Event</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_location.name">
+			<source>Name</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_location.portal">
+			<source>Portal</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_location.xcoordinate">
+			<source>Xcoordinate</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_location.ycoordinate">
+			<source>Ycoordinate</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_location.zipcode">
+			<source>Zipcode</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_programmevents">
+			<source>Programm Events</source>
+		</trans-unit>
+		<trans-unit id="tx_programmevents_domain_model_programmevents.description">
+			<source>Programm Events with xml import</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

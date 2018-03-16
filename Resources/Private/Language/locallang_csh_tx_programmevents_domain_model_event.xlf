@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-02-28T16:50:18Z" product-name="programmevents">
+		<header/>
+		<body>
+			<trans-unit id="tx_programmevents_domain_model_programmevents">
+				<source>Programm Events</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_programmevents.description">
+				<source>Programm Events with xml import</source>
+			</trans-unit>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="id.description">
+				<source>id</source>
+			</trans-unit>
+			<trans-unit id="type.description">
+				<source>type</source>
+			</trans-unit>
+			<trans-unit id="datebegin.description">
+				<source>datebegin</source>
+			</trans-unit>
+			<trans-unit id="timebegin.description">
+				<source>timebegin</source>
+			</trans-unit>
+			<trans-unit id="formatteddate.description">
+				<source>formatteddate</source>
+			</trans-unit>
+			<trans-unit id="weekdaybegin.description">
+				<source>weekdaybegin</source>
+			</trans-unit>
+			<trans-unit id="categories.description">
+				<source>categories</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="location.description">
+				<source>location</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,47 @@
+{namespace pm=T3Dev\Programmevents\ViewHelpers}
+
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+	<f:section name="main">
+	
+<div class="csc-header csc-header-n1">
+	<h1 class="csc-firstHeader">
+			Search results 
+			<f:if condition="{startDate}">
+				from {startDate}
+			</f:if>
+			<f:if condition="{endDate}">
+			 to {endDate}	
+			</f:if> 
+	</h1>	
+</div>	
+
+<f:if condition="{events}">
+	<f:then>
+
+<div id="accordion">
+		<f:if condition="{events -> f:count()} > {settings.eventsPerPage}">
+			<f:then>
+ 				<pm:Paginate objects="{events}" as="paginatedEvents"
+ 					configuration="{itemsPerPage: '{settings.eventsPerPage}', insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 50}">
+					<f:for each="{paginatedEvents}" as="event">
+						<f:render partial="Event/ListTable" arguments="{_all}" />	
+					</f:for>
+				</pm:Paginate>
+			</f:then>
+			<f:else>
+				<f:for each="{events}" as="event">
+     			<f:render partial="Event/ListTable" arguments="{_all}" />		
+				</f:for>			
+			</f:else>
+		</f:if>
+	</div>
+	
+	</f:then>
+	<f:else>
+		<p>No search result for this period</p>
+	</f:else>
+</f:if>	
+	
+	</f:section>
+</html>

@@ -1,0 +1,52 @@
+<div class="prgDetailBox" border="0">
+  <div valign="top" class="prgDetailImg">  	
+  	<f:if condition="{event.picture}">	
+  		<f:then>
+  			<f:image src="{event.picture.originalResource.publicUrl}" width="100c" height="100c" />	
+  		</f:then>
+  		<f:else>
+  			<f:if condition="{event.image}">	
+  				<f:then>
+						<image src="{event.image}" class="prgImg" alt="{event.title}" />
+  				</f:then>
+  				<f:else>
+  					<f:image src="typo3conf/ext/programmevents/Resources/Public/Images/no-image.png" 
+  					maxWidth="200" maxHeight="200" alt="{event.title}" class="prgImg"  />
+  				</f:else>
+  			</f:if>	  		
+  		</f:else>
+  	</f:if>  	 	
+  </div>
+  
+  <div valign="top" class="prgDetailTitle">
+  	<p class="prgListZeit">{event.formatteddate}</p><br/>
+    <h3 class="prgHeadLine">{event.title}</h3>
+    
+    <f:if condition="{event.subtitle}">
+    
+    </f:if>
+    
+    <f:if condition="{event.location}">
+    	Location: {event.location.name} <br />
+    	Address: {event.location.address} <br />
+    	City: {event.location.city} 
+    </f:if><br />
+    <f:if condition="{event.location.portal}">			
+			Portal: 
+			<f:link.external uri="{event.location.portal}" target="_blank">Go to portal</f:link.external><br />
+    </f:if>
+    
+    <f:if condition="{event.categories}">
+    	Categories: 
+			<f:render partial="Event/Categories" arguments="{_all}" />	  	
+    </f:if>  
+  </div>
+  
+  <div class="prgDetailTxt">
+  	<f:link.page pageUid="{settings.listPageUid}">
+  		[&nbsp;zur&uuml;ck&nbsp;]
+  	</f:link.page>
+  </div>
+
+</div>
+<div id="last_modified">(Letzte Änderung: {event.datebegin} - {event.timebegin} Uhr)</div>

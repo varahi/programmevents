@@ -1,0 +1,19 @@
+<f:layout name="Default" />
+	<f:section name="main">
+
+	<f:flashMessages renderMode="div" />
+  <f:form 
+  	method="post" 
+  	action="search" 
+  	controller="Event" 
+  	pageUid="{settings.serachResultPage}" 
+  	name="search" >
+    	
+    <f:form.textfield name="startDate" value="{startDate}" id="startdate" />
+    <f:form.textfield name="endDate" value="{endDate}" id="enddate" />
+    		
+    <button type="submit" class="btn btn-success btn-search">Suche</button>		
+    	
+  </f:form>
+  
+</f:section>  

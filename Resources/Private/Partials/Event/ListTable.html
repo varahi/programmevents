@@ -1,0 +1,45 @@
+<div class="header">
+	<div class="event-list__image">
+  	<f:if condition="{event.picture}">	
+  		<f:then>
+  			<f:image src="{event.picture.originalResource.publicUrl}" width="100c" height="100c" />	
+  		</f:then>
+  		<f:else>
+  			<f:if condition="{event.image}">	
+  				<f:then>
+						<image src="{event.image}" class="prgImg" alt="{event.title}" />
+  				</f:then>
+  				<f:else>
+  					<f:image src="typo3conf/ext/programmevents/Resources/Public/Images/no-image.png" 
+  					width="100c" height="100c" alt="{event.title}" class="prgImg"  />
+  				</f:else>
+  			</f:if>	  		
+  		</f:else>
+  	</f:if>  		
+	</div>
+	<div class="event-list__title">
+  	<p class="prgListZeit">{event.formatteddate}</p>
+  	<h3 class="-prgHeadLine">{event.title}</h3> 	
+   		<f:if condition="{event.categories}">
+   			<div class="event-list__categories">
+				<f:render partial="Event/Categories" arguments="{_all}" />	
+				</div>  	
+    	</f:if> 	
+	</div>
+</div>
+
+  <div class="event-list__info">
+ 		<!-- <span class="prgListVE">Veranstalter:&nbsp;{event.location.name}</span> -->
+ 		
+    <f:if condition="{event.location}">
+    	Location: {event.location.name} <br />
+    	Address: {event.location.address} <br />
+    	City: {event.location.city} 
+    </f:if>	
+  	
+    <f:if condition="{event.location.portal}">			
+			<br />Portal: 
+			<f:link.external uri="{event.location.portal}" target="_blank">Go to portal</f:link.external><br />
+    </f:if>
+      	
+ 	</div>

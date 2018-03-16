@@ -1,0 +1,16 @@
+   			<f:for each="{event.categories}" as="category" iteration="itemIteration">
+  				<f:if condition="{itemIteration.isLast}">	
+  					<f:then>
+  						<f:link.page additionalParams="{tx_programmevents_programmevents: '{category: category}'}" 
+  						pageUid="{settings.listPageUid}">
+  							{category.title}	
+  						</f:link.page>
+  					</f:then>
+  					<f:else>
+  						<f:link.page additionalParams="{tx_programmevents_programmevents: '{category: category}'}" 
+  						pageUid="{settings.listPageUid}">  					
+  							{category.title},
+  						</f:link.page>
+  					</f:else>
+  				</f:if>
+  			</f:for> 

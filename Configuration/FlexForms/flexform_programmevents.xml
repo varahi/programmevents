@@ -1,0 +1,165 @@
+<T3DataStructure>
+	 <meta>
+    <langDisable>1</langDisable>
+    <langDatabaseOverlay>1</langDatabaseOverlay>
+  </meta>
+	
+ <sheets>
+  <sDEF>
+   <ROOT>
+     <TCEforms>
+      <sheetTitle>LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.settings</sheetTitle>
+     </TCEforms>
+     <type>array</type>
+     <el>   
+          <!-- View -->
+          <switchableControllerActions>
+            <TCEforms>
+            <label>LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.settings</label>
+            <onChange>reload</onChange>
+            <config>
+              <type>select</type>
+              <items>
+                <numIndex index="1" type="array">
+                  <numIndex index="0">LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.event_list</numIndex>
+                  <numIndex index="1">Event->list;Event->show;Event->searchForm;Event->search;</numIndex>
+                </numIndex> 
+                <numIndex index="2" type="array">
+                  <numIndex index="0">LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.event_detail</numIndex>
+                  <numIndex index="1">Event->show;Event->list;Event->searchForm;Event->search;</numIndex>
+                </numIndex>  
+                 <numIndex index="3" type="array">
+                  <numIndex index="0">LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.categories_list</numIndex>
+                  <numIndex index="1">Categories->list;Event->list;Event->searchForm;Event->search;</numIndex>
+                </numIndex>   
+                 <numIndex index="4" type="array">
+                  <numIndex index="0">LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.location_list</numIndex>
+                  <numIndex index="1">Location->list;Event->list;Event->searchForm;Event->search;</numIndex>
+                </numIndex>  
+                 <numIndex index="5" type="array">
+                  <numIndex index="0">LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.event_search_form</numIndex>
+                  <numIndex index="1">Event->searchForm;Event->search;Event->list;</numIndex>
+                </numIndex> 
+                 <numIndex index="6" type="array">
+                  <numIndex index="0">LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.event_search_result</numIndex>
+                  <numIndex index="1">Event->search;Event->searchForm;Event->list;</numIndex>
+                </numIndex>                                                                 
+                                                                                      						
+              </items>
+            </config>
+            </TCEforms>
+          </switchableControllerActions> 
+          
+           <!-- PID Single Page -->
+          <settings.detailPageUid>
+            <TCEforms>
+              <label>LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.detail_page</label>
+              <config>
+                <type>group</type>
+                <internal_type>db</internal_type>
+                <allowed>pages</allowed>
+                <size>1</size>
+                <maxitems>1</maxitems>
+                <minitems>0</minitems>
+                <show_thumbs>1</show_thumbs>
+                <wizards>
+                  <suggest>
+                    <type>suggest</type>
+                  </suggest>
+                </wizards>
+              </config>
+            </TCEforms>
+          </settings.detailPageUid>	          
+  
+          <!-- PID List Page -->
+          <settings.listPageUid>
+            <TCEforms>
+              <label>LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.list_page</label>
+              <config>
+                <type>group</type>
+                <internal_type>db</internal_type>
+                <allowed>pages</allowed>
+                <size>1</size>
+                <maxitems>1</maxitems>
+                <minitems>0</minitems>
+                <show_thumbs>1</show_thumbs>
+                <wizards>
+                  <suggest>
+                    <type>suggest</type>
+                  </suggest>
+                </wizards>
+              </config>
+            </TCEforms>
+          </settings.listPageUid>  
+                                                               				                                       																			
+     </el>
+   </ROOT>
+  </sDEF>
+   
+ 	<!--
+	################################
+		SHEET Additional
+	################################
+	-->
+		<additional>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.additional</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+				
+          <!-- Show All -->
+					<settings.showAll>
+        		<TCEforms>
+         			<label>LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.show_all</label>
+         				<config>
+          				<type>check</type>
+         				</config>
+        		</TCEforms>
+    			</settings.showAll>				
+
+          <!-- Category -->
+					<settings.categories>
+				        <TCEforms>
+				        <exclude>1</exclude>
+				        <label>LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.categories</label>
+				        <config>
+			            	<type>select</type>
+			                <autoSizeMax>50</autoSizeMax>
+			                <foreign_table>sys_category</foreign_table>
+		                    <foreign_label>sys_category.uid</foreign_label>
+			                <foreign_table_where> AND sys_category.sys_language_uid IN (-1, 0) ORDER BY sys_category.sorting ASC</foreign_table_where>
+			                <maxitems>9999</maxitems>
+			                <renderMode>tree</renderMode>
+			                <size>10</size>
+			                <treeConfig>
+		                        <appearance>
+	                                <expandAll>TRUE</expandAll>
+	                                <showHeader>TRUE</showHeader>
+		                        </appearance>
+		                        <parentField>parent</parentField>
+			                </treeConfig>
+				        </config>	        
+				        </TCEforms>				        
+					</settings.categories>								
+					<!-- End Category -->			
+					
+					<!-- Events per page start -->
+					<settings.eventsPerPage>
+						<TCEforms>
+							<label>LLL:EXT:programmevents/Resources/Private/Language/locallang_db.xlf:flexforms_general.events_per_page</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+								<eval>required</eval>
+							</config>
+						</TCEforms>
+					</settings.eventsPerPage>  								
+    												    											
+				</el>
+			</ROOT>
+		</additional> 
+  
+ </sheets>
+</T3DataStructure>

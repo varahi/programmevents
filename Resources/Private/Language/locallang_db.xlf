@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-02-28T16:50:18Z" product-name="programmevents">
+		<header/>
+		<body>
+			<trans-unit id="tx_programmevents_domain_model_programmevents">
+				<source>Programm Events</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_programmevents.description">
+				<source>Programm Events with xml import</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_event">
+				<source>Event</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_event.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_event.subtitle">
+				<source>Subtitle</source>
+			</trans-unit>	
+			<trans-unit id="tx_programmevents_domain_model_event.start_date">
+				<source>Start Date</source>
+			</trans-unit>	
+			<trans-unit id="tx_programmevents_domain_model_event.end_date">
+				<source>End Date</source>
+			</trans-unit>									
+			<trans-unit id="tx_programmevents_domain_model_event.id">
+				<source>Id</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_event.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_event.datebegin">
+				<source>Datebegin</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_event.timebegin">
+				<source>Timebegin</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_event.formatteddate">
+				<source>Formatteddate</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_event.weekdaybegin">
+				<source>Weekdaybegin</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_event.categories">
+				<source>Categories</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_event.image">
+				<source>External image</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_event.picture">
+				<source>Image</source>
+			</trans-unit>		
+			<trans-unit id="tx_programmevents_domain_model_event.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_location.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_location.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_location.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_location.zipcode">
+				<source>Zipcode</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_location.xcoordinate">
+				<source>Xcoordinate</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_location.ycoordinate">
+				<source>Ycoordinate</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_location.portal">
+				<source>Portal</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_location.event">
+				<source>Event</source>
+			</trans-unit>
+			<trans-unit id="tx_programmevents_domain_model_category.images">
+				<source>Images</source>
+			</trans-unit>			
+
+			<trans-unit id="flexforms_general.settings">
+				<source>Settings</source>
+			</trans-unit>				
+			<trans-unit id="flexforms_general.event_list">
+				<source>Event list</source>
+			</trans-unit>	
+			<trans-unit id="flexforms_general.event_detail">
+				<source>Event detail</source>
+			</trans-unit>	
+				<trans-unit id="flexforms_general.detail_page">
+				<source>Detail page</source>
+			</trans-unit>						
+			<trans-unit id="flexforms_general.list_page">
+				<source>List Page</source>
+			</trans-unit>		
+			<trans-unit id="flexforms_general.additional">
+				<source>Additional</source>
+			</trans-unit>							
+			<trans-unit id="flexforms_general.categories">
+				<source>Categories</source>
+			</trans-unit>				
+			<trans-unit id="flexforms_general.show_all">
+				<source>Show all</source>
+			</trans-unit>		
+			<trans-unit id="flexforms_general.categories_list">
+				<source>Categories list</source>
+			</trans-unit>		
+			<trans-unit id="flexforms_general.location_list">
+				<source>Location list</source>
+			</trans-unit>		
+			<trans-unit id="flexforms_general.events_per_page">
+				<source>Events per page</source>
+			</trans-unit>	
+			<trans-unit id="flexforms_general.event_search_form">
+				<source>Event search form</source>
+			</trans-unit>	
+			<trans-unit id="flexforms_general.event_search_result">
+				<source>Search result</source>
+			</trans-unit>							
+			
+			<trans-unit id="tx_programmevents_domain_model_event.relations">
+				<source>Relations</source>
+			</trans-unit>		
+			<trans-unit id="tx_programmevents_domain_model_event.visibility_dates">
+				<source>Visibility Dates</source>
+			</trans-unit>																					
+					
+		</body>
+	</file>
+</xliff>

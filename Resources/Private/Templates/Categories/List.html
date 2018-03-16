@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+	<f:section name="main">
+
+		<div class="category-list">	
+		<f:for each="{categories}" as="category" iteration="iterator">
+		<div class="category-list__item-outer">
+			<div class="category-list__item-inner {f:if(condition: '{argCategory}=={category.uid}', then: 'category-list__item-active' )}">		
+				<f:link.page class="category-list__link" 
+					additionalParams="{tx_programmevents_programmevents: '{category: category}'}" 
+					pageUid="{settings.listPageUid}">									
+					<f:image class="img-fluid" src="{category.images.originalResource.publicUrl}" width="65c" height="65c"/>
+					<p class="category-list__title">{category.title}</p>
+				</f:link.page>
+			</div>	
+		</div>
+		</f:for>
+		</div>
+	</f:section>
+</html>
+
+

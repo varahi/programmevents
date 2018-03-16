@@ -1,0 +1,14 @@
+# ==============================================
+# Persistence object mapping configuration
+# ==============================================
+config.tx_extbase.persistence.classes {
+	T3Dev\Programmevents\Domain\Model\Categories {
+		mapping {
+			tableName = sys_category
+			columns {
+				parent.mapOnProperty = parentcategory
+				categories.mapOnProperty = categories
+			}
+		}
+	}
+}
